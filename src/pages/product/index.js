@@ -71,7 +71,7 @@ function Home(props) {
 
     return (
         <Box>
-            <Header word={keyword} setWord={change} press={press}/>
+            <Header btnClick={press} word={keyword} setWord={change} press={press}/>
             <div className={'con'}>
                 <div className={'con-0'}>
                     {

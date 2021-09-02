@@ -58,7 +58,7 @@ function Home(props) {
 
     return (
         <Box align="center">
-            <Header word={keyword} setWord={change} press={press}/>
+            <Header btnClick={press} word={keyword} setWord={change} press={press}/>
             <div className={'con'}>
                 <div className={'con-1'}>Related new products published in the last 7 days</div>
                 <div className={'con-2'}>

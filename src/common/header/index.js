@@ -4,7 +4,7 @@ import SearchIcon from '@material-ui/icons/Search';
 
 const Header = props => {
 
-    const {word, setWord} = props
+    const {word, setWord,btnClick} = props
 
     const pressUp = e => {
         if (e.keyCode === 13) {
@@ -23,7 +23,7 @@ const Header = props => {
                 value={word}
                 onChange={setWord}
                 placeholder={'Search for new products in 961K stores'}/>
-            <button>
+            <button onClick={btnClick}>
                 <SearchIcon style={{fontSize: 20, color: '#666'}}/>
                 {/*<img src={require('../../assets/search.png')} alt={''}/>*/}
             </button>
